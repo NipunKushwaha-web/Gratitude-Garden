@@ -1,6 +1,5 @@
 # Gratitude Garden
 
-<img width="977" height="1885" alt="Screenshot 2026-03-27 181622" src="https://github.com/user-attachments/assets/9bc56d9d-b2d1-4ded-97f5-3d50948d6b43" />
 
 A serene digital garden where your gratitude entries bloom into beautiful flowers. Track your gratitude journey through an interactive, visually calming experience.
 
@@ -89,7 +88,7 @@ src/
 
 ## Screenshot
 
-![Gratitude Garden](https://gratitude-garden-three.vercel.app/og.png)
+<img width="977" height="1885" alt="Screenshot 2026-03-27 181622" src="https://github.com/user-attachments/assets/9bc56d9d-b2d1-4ded-97f5-3d50948d6b43" />
 
 ## Author
 
