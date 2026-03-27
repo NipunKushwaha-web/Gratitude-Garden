@@ -1,73 +1,104 @@
-# React + TypeScript + Vite
+# Gratitude Garden
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img width="977" height="1885" alt="Screenshot 2026-03-27 181622" src="https://github.com/user-attachments/assets/9bc56d9d-b2d1-4ded-97f5-3d50948d6b43" />
 
-Currently, two official plugins are available:
+A serene digital garden where your gratitude entries bloom into beautiful flowers. Track your gratitude journey through an interactive, visually calming experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**[Live Demo](https://gratitude-garden-three.vercel.app/)**
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Plant Flowers with Gratitude** - Each gratitude entry you write plants a unique flower in your personal garden
+- **Visual Garden Canvas** - Watch your garden grow with animated flowers that bloom beautifully using GSAP
+- **Journey Stats** - Track your progress with metrics like "Flowers Planted" and "Words Written"
+- **Calendar Widget** - Visualize your gratitude streaks and entry history
+- **Local Storage Persistence** - Your garden is automatically saved and persists across sessions
+- **Ambient Effects** - Floating pollen particles create a peaceful, meditative atmosphere
+- **Responsive Design** - Built with TailwindCSS for a seamless experience on all devices
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React** - UI library
+- **TypeScript** - Type-safe development
+- **Vite** - Build tool and dev server
+- **TailwindCSS** - Utility-first styling
+- **GSAP** - Smooth bloom animations
+- **Lucide React** - Beautiful iconography
+- **Local Storage** - Client-side data persistence
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Prerequisites
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Node.js (v18 or higher recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/NipunKushwaha-web/Gratitude-Garden.git
+   cd Gratitude-Garden
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+## Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server with HMR |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview production build locally |
+| `npm run lint` | Run ESLint checks |
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── EntryForm.tsx      # Gratitude input form
+│   ├── GardenCanvas.tsx   # Visual garden display
+│   ├── GardenFlower.tsx   # Individual flower component
+│   ├── Header.tsx         # App header
+│   └── CalendarWidget.tsx # Entry calendar view
+├── context/
+│   └── GardenContext.tsx  # State management & persistence
+├── types/
+│   └── garden.ts          # TypeScript type definitions
+├── App.tsx                # Main application component
+└── main.tsx               # Entry point
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## How It Works
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. **Write Your Gratitude** - Type what you're grateful for in the daily entry form (max 280 characters)
+2. **Plant a Flower** - Submit your entry to plant a flower in your garden
+3. **Watch It Bloom** - GSAP animations bring your flower to life with a smooth bloom effect
+4. **Track Your Journey** - View your growing garden and statistics over time
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Screenshot
+
+![Gratitude Garden](https://gratitude-garden-three.vercel.app/og.png)
+
+## Author
+
+**Coded by [@thakurxnipun](https://instagram.com/thakurxnipun)**
+
+## License
+
+This project is open source and available under the MIT License.
+
+---
+
+> "Gratitude turns what we have into enough." - Start your gratitude garden today.
